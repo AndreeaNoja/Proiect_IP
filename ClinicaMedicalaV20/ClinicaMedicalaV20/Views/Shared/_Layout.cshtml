@@ -1,0 +1,201 @@
+﻿@inject IHttpContextAccessor HttpContextAccessor
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Asigură-te că jQuery vine înainte de Popper.js și Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="~/node_modules/chart.js/dist/chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="~/node_modules/chart.js/dist/chart.min.js"></script>
+
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ClinicaMedicalaV20</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ClinicaMedicalaV20.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/images/logo.jpeg" alt="Clinica Medicala Logo" style="height: 80px; max-height: 100%; margin-top: -10px; margin-bottom: -10px;">
+                </a>
+
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        @if (HttpContextAccessor.HttpContext.Session.GetString("MedicNume") == "admin")
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle btn btn-primary" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Medici
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" asp-area="" asp-controller="Medics" asp-action="Create">Adauga</a>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Medics" asp-action="Index">Vizualizare</a>
+                                
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-link">Bun venit, @HttpContextAccessor.HttpContext.Session.GetString("MedicNume")!</span>
+                            </li>
+
+                            <li class="nav-item">
+
+                                <form asp-area="" asp-controller="Medics" asp-action="Logout" method="post" class="form-inline">
+                                    <button type="submit" class="btn btn-link nav-link">Logout</button>
+                                </form>
+                            </li>
+                        }
+                        else if (HttpContextAccessor.HttpContext.Session.GetString("PacientNume")=="admin")
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle btn btn-primary" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Medici
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" asp-area="" asp-controller="Medics" asp-action="Create">Adauga</a>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Medics" asp-action="Index">Vizualizare</a>
+
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-link">Bun venit, @HttpContextAccessor.HttpContext.Session.GetString("PacientNume")!</span>
+                            </li>
+
+                            <li class="nav-item">
+
+                                <form asp-area="" asp-controller="Medics" asp-action="Logout" method="post" class="form-inline">
+                                    <button type="submit" class="btn btn-link nav-link">Logout</button>
+                                </form>
+                            </li>
+
+                        }
+                        else if (HttpContextAccessor.HttpContext.Session.GetString("MedicNume") != null)
+                        {
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle btn btn-green text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Adauga
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" asp-area="" asp-controller="Pacients" asp-action="Create">Pacienti</a>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Alertes" asp-action="Create">Alerte</a>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Recomandaris" asp-action="Create">Recomandari</a>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Date_Medicale" asp-action="Create">Date medicale</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle btn btn-green text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Detalii
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" asp-area="" asp-controller="Pacients" asp-action="Index">Pacienti</a>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Alertes" asp-action="Index">Alerte</a>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Recomandaris" asp-action="Index">Recomandari</a>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Date_Medicale" asp-action="Index">Date medicale</a>
+                                </div>
+                            </li>
+
+                            <style>
+                                .btn-green {
+                                    background-color: green;
+                                    color: white !important; /* Folosirea !important pentru a suprascrie alte stiluri */
+                                }
+                            </style>
+
+
+                            <li class="nav-item">
+                                <span class="nav-link">Bun venit, @HttpContextAccessor.HttpContext.Session.GetString("MedicNume")!</span>
+                            </li>
+                
+                            <li class="nav-item">
+                           
+                                <form asp-area="" asp-controller="Medics" asp-action="Logout" method="post" class="form-inline">
+                                    <button type="submit" class="btn btn-link nav-link">Logout</button>
+                                </form>
+                            </li>
+                        }
+                        else if (HttpContextAccessor.HttpContext.Session.GetString("PacientNume") != null)
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle btn btn-green text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Informatii
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" asp-area="" asp-controller="Pacients" asp-action="MyDetails">Detaliile mele</a>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Pacients" asp-action="MyAlerts">Alerte</a>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Pacients" asp-action="MyRecommendations">Recomandarile mele</a>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Pacients" asp-action="MyDate_medicale">Date medicale</a>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Pacients" asp-action="ECGGraphsPacient">ECG</a>
+                                </div>
+                            </li>
+
+                            <style>
+                                .btn-green {
+                                    background-color: green;
+                                    color: white !important; /* Folosirea !important pentru a suprascrie alte stiluri */
+                                }
+                            </style>
+
+
+                            <li class="nav-item">
+                                <span class="nav-link">Bun venit, @HttpContextAccessor.HttpContext.Session.GetString("PacientNume")!</span>
+                            </li>
+                            <li class="nav-item">
+                                <form asp-area="" asp-controller="Pacients" asp-action="Logout" method="post" class="form-inline">
+                                    <button type="submit" class="btn btn-link nav-link">Logout</button>
+                                </form>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Medics" asp-action="Login">Medic Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Pacients" asp-action="Login">Pacient Login</a>
+                            </li>
+                        }
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,67 @@
+﻿@model ClinicaMedicalaV20.Models.Recomandari
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1 class="text-center my-4">Create Recomandari</h1>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title mb-4 text-center">Recomandari Details</h4>
+                    <form asp-action="Create">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="IDPacient" class="control-label"></label>
+                            <input asp-for="IDPacient" class="form-control" />
+                            <span asp-validation-for="IDPacient" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="TipulRecomandarii" class="control-label"></label>
+                            <input asp-for="TipulRecomandarii" class="form-control" />
+                            <span asp-validation-for="TipulRecomandarii" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="Data_Inceput" class="control-label"></label>
+                            <input asp-for="Data_Inceput" class="form-control" />
+                            <span asp-validation-for="Data_Inceput" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="Data_Final" class="control-label"></label>
+                            <input asp-for="Data_Final" class="form-control" />
+                            <span asp-validation-for="Data_Final" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="AlteIndicatii" class="control-label"></label>
+                            <input asp-for="AlteIndicatii" class="form-control" />
+                            <span asp-validation-for="AlteIndicatii" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group text-center">
+                            <input type="submit" value="Create" class="btn btn-primary btn-lg px-5" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-3">
+        <div class="col-md-6 text-center">
+            <a asp-action="Index" class="btn btn-secondary btn-lg">Back to List</a>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

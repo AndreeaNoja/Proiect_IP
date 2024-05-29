@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\ClinicaMedicalaV20.props" />
+</Project>

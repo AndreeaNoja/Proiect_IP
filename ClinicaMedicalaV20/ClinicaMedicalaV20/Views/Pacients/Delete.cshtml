@@ -1,0 +1,111 @@
+﻿@model ClinicaMedicalaV20.Models.Pacient
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Sterge</h1>
+
+<h3>Ești sigur că vrei să ștergi acest lucru?</h3>
+<div>
+    <h4>Pacient</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IDMedicApartinator)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IDMedicApartinator)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CNP)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CNP)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nume)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nume)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Prenume)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Prenume)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Varsta)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Varsta)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Judet)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Judet)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Oras)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Oras)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Strada)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Strada)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Numar)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Numar)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Bloc)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Bloc)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Apartament)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Apartament)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NumarTel)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NumarTel)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Profesie)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Profesie)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LocMunca)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LocMunca)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Sterge" class="btn btn-danger" /> |
+        <a asp-action="Index">Inapoi la lista</a>
+    </form>
+</div>

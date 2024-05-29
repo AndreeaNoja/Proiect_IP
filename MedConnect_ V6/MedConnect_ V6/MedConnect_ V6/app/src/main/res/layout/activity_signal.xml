@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignalActivity">
+
+    <EditText
+        android:id="@+id/param1EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Parameter 1"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/param2EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Parameter 2"
+        android:layout_below="@id/param1EditText"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/param3EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Parameter 3"
+        android:layout_below="@id/param2EditText"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/param4EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Parameter 4"
+        android:layout_below="@id/param3EditText"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:layout_below="@id/param4EditText"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_below="@id/calculateButton"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Actiuni">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/meniu" android:icon="@drawable/menu" android:title="Meniu"/>
+                <item android:id="@+id/acasa" android:icon="@drawable/home" android:title="Acasă"/>
+                <item android:id="@+id/calendar" android:icon="@drawable/calendar" android:title="Calendar"/>
+                <item android:id="@+id/recomandari" android:icon="@drawable/recomandari" android:title="Recomandări"/>
+                <item android:id="@+id/avertizari" android:icon="@drawable/avertizari" android:title="Avertizări"/>
+                <item android:id="@+id/date_masuratori" android:icon="@drawable/masuratori" android:title="Date măsurători"/>
+                <item android:id="@+id/signal" android:icon="@drawable/ekg" android:title="EKG"/>
+            </group>
+        </menu>
+    </item>
+    <item android:title="Profil">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/logout" android:icon="@drawable/logout" android:title="Deconectare"/>
+            </group>
+        </menu>
+    </item>
+</menu>

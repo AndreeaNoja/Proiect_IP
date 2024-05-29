@@ -1,0 +1,139 @@
+﻿@model ClinicaMedicalaV20.Models.Pacient
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1 class="text-center my-4">Create Pacient</h1>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title mb-4 text-center">Pacient Details</h4>
+                    <form asp-action="Create">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6 mb-3">
+                                <label asp-for="IDMedicApartinator" class="control-label"></label>
+                                <input asp-for="IDMedicApartinator" class="form-control" />
+                                <span asp-validation-for="IDMedicApartinator" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group col-md-6 mb-3">
+                                <label asp-for="CNP" class="control-label"></label>
+                                <input asp-for="CNP" class="form-control" />
+                                <span asp-validation-for="CNP" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6 mb-3">
+                                <label asp-for="Nume" class="control-label"></label>
+                                <input asp-for="Nume" class="form-control" />
+                                <span asp-validation-for="Nume" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group col-md-6 mb-3">
+                                <label asp-for="Prenume" class="control-label"></label>
+                                <input asp-for="Prenume" class="form-control" />
+                                <span asp-validation-for="Prenume" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6 mb-3">
+                                <label asp-for="Varsta" class="control-label"></label>
+                                <input asp-for="Varsta" class="form-control" />
+                                <span asp-validation-for="Varsta" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group col-md-6 mb-3">
+                                <label asp-for="Judet" class="control-label"></label>
+                                <input asp-for="Judet" class="form-control" />
+                                <span asp-validation-for="Judet" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6 mb-3">
+                                <label asp-for="Oras" class="control-label"></label>
+                                <input asp-for="Oras" class="form-control" />
+                                <span asp-validation-for="Oras" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group col-md-6 mb-3">
+                                <label asp-for="Strada" class="control-label"></label>
+                                <input asp-for="Strada" class="form-control" />
+                                <span asp-validation-for="Strada" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-3 mb-3">
+                                <label asp-for="Numar" class="control-label"></label>
+                                <input asp-for="Numar" class="form-control" />
+                                <span asp-validation-for="Numar" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group col-md-3 mb-3">
+                                <label asp-for="Bloc" class="control-label"></label>
+                                <input asp-for="Bloc" class="form-control" />
+                                <span asp-validation-for="Bloc" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group col-md-3 mb-3">
+                                <label asp-for="Apartament" class="control-label"></label>
+                                <input asp-for="Apartament" class="form-control" />
+                                <span asp-validation-for="Apartament" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group col-md-3 mb-3">
+                                <label asp-for="NumarTel" class="control-label"></label>
+                                <input asp-for="NumarTel" class="form-control" />
+                                <span asp-validation-for="NumarTel" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6 mb-3">
+                                <label asp-for="Email" class="control-label"></label>
+                                <input asp-for="Email" class="form-control" />
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group col-md-6 mb-3">
+                                <label asp-for="Profesie" class="control-label"></label>
+                                <input asp-for="Profesie" class="form-control" />
+                                <span asp-validation-for="Profesie" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="LocMunca" class="control-label"></label>
+                            <input asp-for="LocMunca" class="form-control" />
+                            <span asp-validation-for="LocMunca" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group text-center">
+                            <input type="submit" value="Create" class="btn btn-primary btn-lg px-5" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-3">
+        <div class="col-md-6 text-center">
+            <a asp-action="Index" class="btn btn-secondary btn-lg">Back to List</a>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

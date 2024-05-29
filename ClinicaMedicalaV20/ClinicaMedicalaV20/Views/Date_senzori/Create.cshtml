@@ -1,0 +1,68 @@
+﻿@model ClinicaMedicalaV20.Models.Date_senzori
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Date_senzori</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="IDPacient" class="control-label"></label>
+                <input asp-for="IDPacient" class="form-control" />
+                <span asp-validation-for="IDPacient" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Timestamp" class="control-label"></label>
+                <input asp-for="Timestamp" class="form-control" />
+                <span asp-validation-for="Timestamp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FrecventaCardiaca" class="control-label"></label>
+                <input asp-for="FrecventaCardiaca" class="form-control" />
+                <span asp-validation-for="FrecventaCardiaca" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Umiditate" class="control-label"></label>
+                <input asp-for="Umiditate" class="form-control" />
+                <span asp-validation-for="Umiditate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TemperaturaMax" class="control-label"></label>
+                <input asp-for="TemperaturaMax" class="form-control" />
+                <span asp-validation-for="TemperaturaMax" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ECG_pWave" class="control-label"></label>
+                <input asp-for="ECG_pWave" class="form-control" />
+                <span asp-validation-for="ECG_pWave" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ECG_qrsWave" class="control-label"></label>
+                <input asp-for="ECG_qrsWave" class="form-control" />
+                <span asp-validation-for="ECG_qrsWave" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ECG_tWave" class="control-label"></label>
+                <input asp-for="ECG_tWave" class="form-control" />
+                <span asp-validation-for="ECG_tWave" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

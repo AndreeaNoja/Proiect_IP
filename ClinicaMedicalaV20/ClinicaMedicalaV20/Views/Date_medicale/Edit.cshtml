@@ -1,0 +1,49 @@
+﻿@model ClinicaMedicalaV20.Models.Date_medicale
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Date_medicale</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="IDPacient" class="control-label"></label>
+                <input asp-for="IDPacient" class="form-control" />
+                <span asp-validation-for="IDPacient" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IstoricMedical" class="control-label"></label>
+                <input asp-for="IstoricMedical" class="form-control" />
+                <span asp-validation-for="IstoricMedical" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Alergii" class="control-label"></label>
+                <input asp-for="Alergii" class="form-control" />
+                <span asp-validation-for="Alergii" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ConsultatiiCardiologice" class="control-label"></label>
+                <input asp-for="ConsultatiiCardiologice" class="form-control" />
+                <span asp-validation-for="ConsultatiiCardiologice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,62 @@
+﻿@model ClinicaMedicalaV20.Models.Medic
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1 class="text-center my-4">Create Medic</h1>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">Medic Details</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Create">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                        <div class="form-group">
+                            <label asp-for="ID_Medic" class="control-label"></label>
+                            <input asp-for="ID_Medic" class="form-control" />
+                            <span asp-validation-for="ID_Medic" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Nume" class="control-label"></label>
+                            <input asp-for="Nume" class="form-control" />
+                            <span asp-validation-for="Nume" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Prenume" class="control-label"></label>
+                            <input asp-for="Prenume" class="form-control" />
+                            <span asp-validation-for="Prenume" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Parola" class="control-label"></label>
+                            <input asp-for="Parola" class="form-control" />
+                            <span asp-validation-for="Parola" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group text-center">
+                            <input type="submit" value="Create" class="btn btn-primary mt-3" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center mt-3">
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

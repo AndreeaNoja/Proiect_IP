@@ -1,0 +1,40 @@
+﻿@model dynamic
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="home-container">
+    <div class="home-text">
+        <h1>CLINICA MEDICALĂ TIMIȘOARA MEDCONNECT</h1>
+    </div>
+    <div class="home-image">
+        <img src="~/images/PozaMedici.jpg" alt="Medic scriind pe clipboard">
+    </div>
+</div>
+
+<style>
+    .home-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #f8f9fa;
+        text-align: left;
+    }
+    .home-text {
+        flex: 1;
+        padding: 20px;
+    }
+    .home-image {
+        flex: 1;
+    }
+    .home-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+    h1 {
+        font-size: 2.5rem;
+        color: #007bff;
+    }
+</style>

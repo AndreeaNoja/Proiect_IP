@@ -1,0 +1,43 @@
+﻿namespace ClinicaMedicalaV20.wwwroot.css
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4; /* O culoare de fundal ușoară */
+    margin: 0; /* Elimină marginile implicite */
+    padding: 0; /* Elimină padding-ul implicit */
+    flex-direction: column; /* Așează elementele vertical */
+}
+
+.login-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+   
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.error-message {
+    color: red; /* Schimbă culoarea textului pentru a indica o eroare */
+    text-align: center; /* Centrează textul eroare */
+    margin: 10px 0; /* Adaugă spațiu deasupra și dedesubtul mesajului */
+    font-size: 16px; /* Oferă o dimensiune potrivită pentru lizibilitate */
+}
+  

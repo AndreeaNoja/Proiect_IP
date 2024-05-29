@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MedConnect_</string>
+    <string name="navigation_open"> Open navigationView </string>
+    <string name="navigation_close"> Close Navigation drawer</string>
+</resources>

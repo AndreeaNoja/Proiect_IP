@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECG Graphs</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+</head>
+<body>
+    <h1>ECG Graphs for You</h1>
+    <canvas id="chart" width="400" height="200"></canvas>
+    <script>
+        async function fetchECGData() {
+            try {
+                const response = await fetch(`/Pacients/GetECGDataPacient`);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+                console.log('Parsed ECG Data:', data); // Logare pentru verificare
+                return data;
+            } catch (error) {
+                console.error('Error fetching ECG data:', error);
+            }
+        }
+
+        function createChart(containerId, labels, pWaveData, qrsWaveData, tWaveData) {
+            console.log('Creating chart for container:', containerId); // Logare pentru verificare
+            const ctx = document.getElementById(containerId).getContext('2d');
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [
+                        {
+                            label: 'P Wave',
+                            data: pWaveData,
+                            borderColor: 'rgba(255, 99, 132, 1)',
+                            borderWidth: 1,
+                            fill: false
+                        },
+                        {
+                            label: 'QRS Wave',
+                            data: qrsWaveData,
+                            borderColor: 'rgba(54, 162, 235, 1)',
+                            borderWidth: 1,
+                            fill: false
+                        },
+                        {
+                            label: 'T Wave',
+                            data: tWaveData,
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1,
+                            fill: false
+                        }
+                    ]
+                },
+                options: {
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Time'
+                            }
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Amplitude'
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        async function drawECGChart() {
+            const data = await fetchECGData();
+            if (data) {
+                const labels = Array.from({ length: data.ecG_pWave.length }, (_, i) => i + 1);
+                console.log('Labels:', labels);
+                console.log('P Wave Data:', data.ecG_pWave);
+                console.log('QRS Wave Data:', data.ecG_qrsWave);
+                console.log('T Wave Data:', data.ecG_tWave);
+
+                createChart('chart', labels, data.ecG_pWave, data.ecG_qrsWave, data.ecG_tWave);
+            }
+        }
+
+        drawECGChart();
+    </script>
+</body>
+</html>

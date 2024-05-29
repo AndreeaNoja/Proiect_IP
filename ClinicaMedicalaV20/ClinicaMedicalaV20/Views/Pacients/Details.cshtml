@@ -1,0 +1,53 @@
+﻿@model ClinicaMedicalaV20.Models.Pacient
+
+@{
+    ViewData["Title"] = "My Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">My Details</h2>
+
+    <div class="card shadow-lg rounded">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <dl class="row">
+                        <dt class="col-sm-4">CNP</dt>
+                        <dd class="col-sm-8">@Model.CNP</dd>
+                        <dt class="col-sm-4">Nume</dt>
+                        <dd class="col-sm-8">@Model.Nume</dd>
+                        <dt class="col-sm-4">Prenume</dt>
+                        <dd class="col-sm-8">@Model.Prenume</dd>
+                        <dt class="col-sm-4">Varsta</dt>
+                        <dd class="col-sm-8">@Model.Varsta</dd>
+                        <dt class="col-sm-4">Judet</dt>
+                        <dd class="col-sm-8">@Model.Judet</dd>
+                        <dt class="col-sm-4">Oras</dt>
+                        <dd class="col-sm-8">@Model.Oras</dd>
+                    </dl>
+                </div>
+                <div class="col-md-6">
+                    <dl class="row">
+                        <dt class="col-sm-4">Strada</dt>
+                        <dd class="col-sm-8">@Model.Strada</dd>
+                        <dt class="col-sm-4">Numar</dt>
+                        <dd class="col-sm-8">@Model.Numar</dd>
+                        <dt class="col-sm-4">Bloc</dt>
+                        <dd class="col-sm-8">@Model.Bloc</dd>
+                        <dt class="col-sm-4">Apartament</dt>
+                        <dd class="col-sm-8">@Model.Apartament</dd>
+                        <dt class="col-sm-4">Numar Telefon</dt>
+                        <dd class="col-sm-8">@Model.NumarTel</dd>
+                        <dt class="col-sm-4">Email</dt>
+                        <dd class="col-sm-8">@Model.Email</dd>
+                        <dt class="col-sm-4">Profesie</dt>
+                        <dd class="col-sm-8">@Model.Profesie</dd>
+                        <dt class="col-sm-4">Loc Munca</dt>
+                        <dd class="col-sm-8">@Model.LocMunca</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,87 @@
+﻿@model ClinicaMedicalaV20.Models.Alerte
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1 class="text-center my-4">Create Alerte</h1>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title mb-4 text-center">Alert Details</h4>
+                    <form asp-action="Create">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6 mb-3">
+                                <label asp-for="IDPacient" class="control-label"></label>
+                                <input asp-for="IDPacient" class="form-control" />
+                                <span asp-validation-for="IDPacient" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group col-md-6 mb-3">
+                                <label asp-for="Alarma" class="control-label"></label>
+                                <input asp-for="Alarma" class="form-control" />
+                                <span asp-validation-for="Alarma" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6 mb-3">
+                                <label asp-for="Avertisment" class="control-label"></label>
+                                <input asp-for="Avertisment" class="form-control" />
+                                <span asp-validation-for="Avertisment" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group col-md-6 mb-3">
+                                <label asp-for="FrecventaCardiacaMax" class="control-label"></label>
+                                <input asp-for="FrecventaCardiacaMax" class="form-control" />
+                                <span asp-validation-for="FrecventaCardiacaMax" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6 mb-3">
+                                <label asp-for="UmiditateMax" class="control-label"></label>
+                                <input asp-for="UmiditateMax" class="form-control" />
+                                <span asp-validation-for="UmiditateMax" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group col-md-6 mb-3">
+                                <label asp-for="TemperaturaMax" class="control-label"></label>
+                                <input asp-for="TemperaturaMax" class="form-control" />
+                                <span asp-validation-for="TemperaturaMax" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6 mb-3">
+                                <label asp-for="ECKMax" class="control-label"></label>
+                                <input asp-for="ECKMax" class="form-control" />
+                                <span asp-validation-for="ECKMax" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group text-center">
+                            <input type="submit" value="Create" class="btn btn-primary btn-lg px-5" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-3">
+        <div class="col-md-6 text-center">
+            <a asp-action="Index" class="btn btn-secondary btn-lg">Back to List</a>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

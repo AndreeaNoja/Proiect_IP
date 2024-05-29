@@ -1,0 +1,65 @@
+﻿@model ClinicaMedicalaV20.Models.Date_medicale
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1 class="text-center my-4">Create Date Medicale</h1>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title mb-4 text-center">Date Medicale Details</h4>
+                    <form asp-action="Create">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6 mb-3">
+                                <label asp-for="IDPacient" class="control-label"></label>
+                                <input asp-for="IDPacient" class="form-control" />
+                                <span asp-validation-for="IDPacient" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group col-md-6 mb-3">
+                                <label asp-for="IstoricMedical" class="control-label"></label>
+                                <input asp-for="IstoricMedical" class="form-control" />
+                                <span asp-validation-for="IstoricMedical" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6 mb-3">
+                                <label asp-for="Alergii" class="control-label"></label>
+                                <input asp-for="Alergii" class="form-control" />
+                                <span asp-validation-for="Alergii" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group col-md-6 mb-3">
+                                <label asp-for="ConsultatiiCardiologice" class="control-label"></label>
+                                <input asp-for="ConsultatiiCardiologice" class="form-control" />
+                                <span asp-validation-for="ConsultatiiCardiologice" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group text-center">
+                            <input type="submit" value="Create" class="btn btn-primary btn-lg px-5" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-3">
+        <div class="col-md-6 text-center">
+            <a asp-action="Index" class="btn btn-secondary btn-lg">Back to List</a>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

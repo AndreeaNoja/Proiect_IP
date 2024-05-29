@@ -1,0 +1,69 @@
+﻿@model ClinicaMedicalaV20.Models.Date_senzori
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Date_senzori</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IDPacient)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IDPacient)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Timestamp)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Timestamp)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FrecventaCardiaca)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FrecventaCardiaca)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Umiditate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Umiditate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TemperaturaMax)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TemperaturaMax)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ECG_pWave)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ECG_pWave)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ECG_qrsWave)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ECG_qrsWave)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ECG_tWave)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ECG_tWave)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

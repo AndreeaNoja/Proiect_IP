@@ -1,0 +1,76 @@
+﻿@model ClinicaMedicalaV20.Models.Alerte
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1 class="text-center my-4">Alerte Details</h1>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h4 class="card-title mb-4 text-center">Details for Alert</h4>
+                    <dl class="row">
+                        <dt class="col-sm-4 text-right font-weight-bold">
+                            @Html.DisplayNameFor(model => model.IDPacient)
+                        </dt>
+                        <dd class="col-sm-8">
+                            @Html.DisplayFor(model => model.IDPacient)
+                        </dd>
+                        <dt class="col-sm-4 text-right font-weight-bold">
+                            @Html.DisplayNameFor(model => model.Alarma)
+                        </dt>
+                        <dd class="col-sm-8">
+                            @Html.DisplayFor(model => model.Alarma)
+                        </dd>
+                        <dt class="col-sm-4 text-right font-weight-bold">
+                            @Html.DisplayNameFor(model => model.Avertisment)
+                        </dt>
+                        <dd class="col-sm-8">
+                            @Html.DisplayFor(model => model.Avertisment)
+                        </dd>
+                        <dt class="col-sm-4 text-right font-weight-bold">
+                            @Html.DisplayNameFor(model => model.FrecventaCardiacaMax)
+                        </dt>
+                        <dd class="col-sm-8">
+                            @Html.DisplayFor(model => model.FrecventaCardiacaMax)
+                        </dd>
+                        <dt class="col-sm-4 text-right font-weight-bold">
+                            @Html.DisplayNameFor(model => model.UmiditateMax)
+                        </dt>
+                        <dd class="col-sm-8">
+                            @Html.DisplayFor(model => model.UmiditateMax)
+                        </dd>
+                        <dt class="col-sm-4 text-right font-weight-bold">
+                            @Html.DisplayNameFor(model => model.TemperaturaMax)
+                        </dt>
+                        <dd class="col-sm-8">
+                            @Html.DisplayFor(model => model.TemperaturaMax)
+                        </dd>
+                        <dt class="col-sm-4 text-right font-weight-bold">
+                            @Html.DisplayNameFor(model => model.ECKMax)
+                        </dt>
+                        <dd class="col-sm-8">
+                            @Html.DisplayFor(model => model.ECKMax)
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-6 text-center">
+            <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-primary btn-lg mx-2">Edit</a>
+            <a asp-action="Index" class="btn btn-secondary btn-lg mx-2">Back to List</a>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+

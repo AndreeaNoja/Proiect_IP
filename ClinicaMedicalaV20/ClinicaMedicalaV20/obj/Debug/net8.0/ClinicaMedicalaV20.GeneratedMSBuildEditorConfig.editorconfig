@@ -1,0 +1,207 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ClinicaMedicalaV20
+build_property.RootNamespace = ClinicaMedicalaV20
+build_property.ProjectDir = C:\Users\Cristi\source\repos\ClinicaMedicalaV20\ClinicaMedicalaV20\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Cristi\source\repos\ClinicaMedicalaV20\ClinicaMedicalaV20
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Alertes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxlcnRlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Alertes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxlcnRlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Alertes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxlcnRlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Alertes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxlcnRlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Alertes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxlcnRlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Date_medicale/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0ZV9tZWRpY2FsZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Date_medicale/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0ZV9tZWRpY2FsZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Date_medicale/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0ZV9tZWRpY2FsZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Date_medicale/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0ZV9tZWRpY2FsZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Date_medicale/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0ZV9tZWRpY2FsZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Date_senzori/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0ZV9zZW56b3JpXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Date_senzori/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0ZV9zZW56b3JpXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Date_senzori/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0ZV9zZW56b3JpXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Date_senzori/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0ZV9zZW56b3JpXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Date_senzori/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0ZV9zZW56b3JpXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Medics/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Medics/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Medics/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Medics/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Medics/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Medics/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNzXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Pacients/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFjaWVudHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Pacients/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFjaWVudHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Pacients/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFjaWVudHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Pacients/ECGGraphs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFjaWVudHNcRUNHR3JhcGhzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Pacients/ECGGraphsPacient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFjaWVudHNcRUNHR3JhcGhzUGFjaWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Pacients/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFjaWVudHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Pacients/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFjaWVudHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Pacients/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFjaWVudHNcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Pacients/MyAlerts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFjaWVudHNcTXlBbGVydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Pacients/MyDate_Medicale.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFjaWVudHNcTXlEYXRlX01lZGljYWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Pacients/MyDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFjaWVudHNcTXlEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Pacients/MyRecommendations.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFjaWVudHNcTXlSZWNvbW1lbmRhdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Recomandaris/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjb21hbmRhcmlzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Recomandaris/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjb21hbmRhcmlzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Recomandaris/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjb21hbmRhcmlzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Recomandaris/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjb21hbmRhcmlzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Recomandaris/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjb21hbmRhcmlzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cristi/source/repos/ClinicaMedicalaV20/ClinicaMedicalaV20/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ggf8ofel3f
